@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ketan's Calculator</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNf0u91ta32o/NMZxltwRo8QtmkMRdAu8="
+		crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="calculatorstyle.css">
+
+</head>
+
+
+<body>
+	
+	<header>
+		<h2>World's Best Calculator</h2>
+	</header>
+
+	<div class="container">
+
+		<div id="calculatorGUI">
+			<input type="text" id="input" value="Enter Here">
+
+
+			<div id="numbers">
+				<button class="function" onclick="add('sqrt(')">&#8730;</button>
+				<button id="openB" onclick="add('(')">(</button>
+				<button id="closeB" onclick="add(')')">)</button>
+				<button id="reset" onclick="reset()">AC</button>
+				<button class="function" onclick="add('sin(')">sin</button>
+				<button class="function" onclick="add('cos(')">cos</button>
+				<button class="function" onclick="add('tan(')">tan</button>
+				<button class="number" onclick="add('1')">1</button>
+				<button class="number" onclick="add('2')">2</button>
+				<button class="number" onclick="add('3')">3</button>
+				<button class="number" onclick="add('4')">4</button>
+				<button class="number" onclick="add('5')">5</button>
+				<button class="number" onclick="add('6')">6</button>
+				<button class="number" onclick="add('7')">7</button>
+				<button class="number" onclick="add('8')">8</button>
+				<button class="number" onclick="add('9')">9</button>
+				<button class="number" onclick="add('0')">0</button>
+				<button id="decimal" onclick="add('.')">.</button>
+				<button id="enter" onclick="calculate()">=</button>
+			</div>
+
+
+
+			<div id="operators">
+				<button id="back" onclick="back()">&#8592</button>
+				<button class="operator" onclick="add('/')">&#247</button>
+				<button class="operator" onclick="add('*')">x</button>
+				<button class="operator" onclick="add('-')">-</button>
+				<button class="operator" onclick="add('+')">+</button>
+				<button class="operator" onclick="add('^')">x<sup>y</sup></button>
+			</div>
+
+
+
+
+
+
+
+		</div>
+
+
+		
+
+		<script type="text/javascript" src="calculatorscriptapi.js"></script>
+
+	</div>
+</body>
+
+</html>
+
+	
